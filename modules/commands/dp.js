@@ -1,27 +1,83 @@
-
 module.exports.config = {
-	name: "dp",
-	version: "30.0.10",
-	hasPermssion: 0,
-	credits: "Dark Rulex Team",
-	description: "Random Image",
-	commandCategory: "random img",
-	usages: "",
-	cooldowns: 5
+  name: "dp",
+  version: "1.0.0",
+  hasPermssion: 0,
+  credits: "Mr AMAN",
+  description: "dpname maker",
+  commandCategory: "dpname",
+  usages: "text 1 + text 2",
+  cooldowns: 1
+};
+module.exports.wrapText = (ctx, text, maxWidth) => {
+  return new Promise((resolve) => {
+    if (ctx.measureText(text).width < maxWidth) return resolve([text]);
+    if (ctx.measureText("W").width > maxWidth) return resolve(null);
+    const words = text.split(" ");
+    const lines = [];
+    let line = "";
+    while (words.length > 0) {
+      let split = false;
+      while (ctx.measureText(words[0]).width >= maxWidth) {
+        const temp = words[0];
+        words[0] = temp.slice(0, -1);
+        if (split) words[1] = `${temp.slice(-1)}${words[1]}`;
+        else {
+          split = true;
+          words.splice(1, 0, temp.slice(-1));
+        }
+      }
+      if (ctx.measureText(`${line}${words[0]}`).width < maxWidth)
+        line += `${words.shift()} `;
+      else {
+        lines.push(line.trim());
+        line = "";
+      }
+      if (words.length === 0) lines.push(line.trim());
+    }
+    return resolve(lines);
+  });
 };
 
-module.exports.run = async ({ api, event }) => {
-	const axios = require('axios');
-	const request = require('request');
-	const fs = require("fs");
-	axios.get('https://dark-rulex-vip.0xanupx0.repl.co/dp').then(res => {
-//	let ext = res.data.url.substring(res.data.url.lastIndexOf(".") + 1);
-	let callback = function () {
-					api.sendMessage({
-						body: ``,
-						attachment: fs.createReadStream(__dirname + `/cache/anear.jpg`)
-					}, event.threadID, () => fs.unlinkSync(__dirname + `/cache/anear.jpg`), event.messageID);
-				};
-				request(res.data.url).pipe(fs.createWriteStream(__dirname + `/cache/anear.jpg`)).on("close", callback);
-			})
-}
+module.exports.run = async function ({ api, event, args, Users }) {
+  let { senderID, threadID, messageID } = event;
+  const { loadImage, createCanvas } = require("canvas");
+  const Canvas = global.nodemodule["canvas"];
+  const request = require('request');
+  const fs = global.nodemodule["fs-extra"];
+  const axios = global.nodemodule["axios"];
+  let pathImg = __dirname + `/cache/drake.png`;
+  const text = args.join(" ").trim().replace(/\s+/g, " ").replace(/(\s+\=)/g, "+").replace(/\|\s+/g, "+").split("+");
+  let getImage = (
+    await axios.get(encodeURI(`https://i.imgur.com/uFUP2y3.jpeg`), {
+      responseType: "arraybuffer",
+    })
+  ).data;
+  fs.writeFileSync(pathImg, Buffer.from(getImage, "utf-8"));
+if(!fs.existsSync(__dirname+'/cache/SNAZZYSURGE.ttf')) { 
+      let getfont = (await axios.get(`https://drive.google.com/u/0/uc?id=11YxymRp0y3Jle5cFBmLzwU89XNqHIZux&export=download`, { responseType: "arraybuffer" })).data;
+       fs.writeFileSync(__dirname+"/cache/SNAZZYSURGE.ttf", Buffer.from(getfont, "utf-8"));
+    };
+  let baseImage = await loadImage(pathImg);
+  let canvas = createCanvas(baseImage.width, baseImage.height);
+  let ctx = canvas.getContext("2d");
+  ctx.drawImage(baseImage, 0, 0, canvas.width, canvas.height);
+  Canvas.registerFont(__dirname+`/cache/SNAZZYSURGE.ttf`, {
+        family: "SNAZZYSURGE"
+    });
+  ctx.font = "40px SNAZZYSURGE";
+  ctx.fillStyle = "#000000";
+  ctx.textAlign = "small";
+  const line = await this.wrapText(ctx, text[0], 400);
+  const lines = await this.wrapText(ctx, text[1], 440);
+  ctx.fillText(line.join("\n"), 120, 500)
+  ctx.fillText(lines.join("\n"), 460, 563)
+  ctx.beginPath();
+  const imageBuffer = canvas.toBuffer();
+  fs.writeFileSync(pathImg, imageBuffer);
+  return api.sendMessage(
+    { attachment: fs.createReadStream(pathImg) },
+    threadID,
+    () => fs.unlinkSync(pathImg),
+    messageID
+  );
+};
