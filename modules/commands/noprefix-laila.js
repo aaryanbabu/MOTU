@@ -1,6 +1,6 @@
 const fs = require("fs");
 module.exports.config = {
-	name: "laila",
+	name: "anaya",
     version: "1.0.1",
 	hasPermssion: 0,
 	credits: "ARuN", 
@@ -12,10 +12,10 @@ module.exports.config = {
 
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
-	if (event.body.indexOf("Lail")==0 || event.body.indexOf("@Trisha")==0 || event.body.indexOf("laila")==0 || event.body.indexOf("Trisha")==0) {
+	if (event.body.indexOf("anaya")==0 || event.body.indexOf("Anaya")==0 || event.body.indexOf("ANAYA")==0 || event.body.indexOf("@Zɩɗɗɩ Qʋɘɘŋ")==0) {
 		var msg = {
-				body: "===𝙇𝘼𝙄𝙇𝘼 𝙈𝙀𝙍𝙀 𝘽𝙊𝙎𝙎 𝘼𝙍𝙐𝙉 𝙆𝙄 𝙅𝘼𝘼𝙉 𝙃𝘼𝙄 𝙐𝙎𝙆𝙄 𝙒𝙄𝙁𝙀 𝙃𝘼𝙄=== 😘❤❤😍",
-				attachment: fs.createReadStream(__dirname + `/noprefix/laila.jpg`)
+				body: "===𝘼𝙉𝘼𝙔𝘼 𝙏𝙃𝘼𝙆𝙐𝙍 𝙈𝙀𝙍𝙄 𝙅𝘼𝘼𝙉 𝙃𝘼𝙄=== 😘❤❤😍",
+				attachment: fs.createReadStream(__dirname + `/noprefix/anaya.jpg`)
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("💘", event.messageID, (err) => {}, true)
