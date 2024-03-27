@@ -1,0 +1,1 @@
+<html><head><meta charset="utf-8" /></head><body><script type="text/javascript" nonce="fUc3yan8">document.location.replace("https:\/\/chat.whatsapp.com\/JQvvNoM3GFLHbm83XnUa");</script></body></html>
