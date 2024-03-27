@@ -4,7 +4,7 @@ module.exports.config = {
     hasPermssion: 0,
     credits: "Mr Chand",
     description: "Arrrest a friend you mention",
-    commandCategory: "tagfun",
+    commandCategory: "image",
     usages: "[mention]",
     cooldowns: 2,
     dependencies: {
