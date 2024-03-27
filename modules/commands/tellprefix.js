@@ -1,25 +1,22 @@
-const fs = require("fs");
 module.exports.config = {
-	name: "Prefix-Batana",
-    version: "1.0.1",
-	hasPermssion: 2,
-	credits: "Fixed By Arun", 
-	description: "hihihihi",
-	commandCategory: "no prefix",
-	usages: "🙂",
-    cooldowns: 5, 
+	name: "creategroup",	
+	version: "1.0.0", 
+	hasPermssion: 0,
+	credits: "ryuko",
+	description: "create a new chat group with the tag", 
+  commandCategory: "groups",
+	usages: 'creategroup',
+	cooldowns: 5, 
+	dependencies: "",
 };
 
-module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
-	var { threadID, messageID } = event;
-	if (event.body.indexOf("#")==0 || event.body.indexOf("/")==0 || event.body.indexOf("-")==0 || event.body.indexOf("*")==0) {
-		var msg = {
-				body: "Oh Babu... mera prefix 👉🏻 +  hai 🤦🏻‍♀🤦🏻‍♀🤦🏻‍♀",
-			}
-			api.sendMessage( msg, threadID, messageID);
-    api.setMessageReaction("🤦🏻‍♀", event.messageID, (err) => {}, true)
-		}
-	}
-	module.exports.run = function({ api, event, client, __GLOBAL }) {
-
-  }
+module.exports.run = async function({ api, Users, args, event }) {
+ if (args[0] == "me")
+  var id = [event.senderID]
+  else id = [];
+  var main = event.body; 
+  var groupTitle = main.slice(main.indexOf("|") +2)
+  for (var i = 0; i < Object.keys(event.mentions).length; i++)
+id.push(Object.keys(event.mentions)[i]);
+  api.createNewGroup(id, groupTitle,() => {api.sendMessage(`successfully created a group ${groupTitle}`, event.threadID)})
+}
