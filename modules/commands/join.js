@@ -24,7 +24,7 @@ module.exports.handleReply = async function({ api, event, handleReply, Threads }
     if (participantIDs.includes(senderID)) return api.sendMessage(`You are already in this group.`, threadID, messageID);
     api.addUserToGroup(senderID, ID[body - 1]);
     if (approvalMode == true && !adminIDs.some(item => item.id) == api.getCurrentUserID()) return api.sendMessage("Added you to the group's approval list...Custom yourself.", threadID, messageID);
-    else return api.sendMessage(`My wife just added you to the group ${threadInfo.threadName} already. Check in the waiting or spam message section if you don't see the box \nA lot 💟`, threadID, messageID);
+    else return api.sendMessage(`AARYAN BOSS just added you to the group ${threadInfo.threadName} already. Check in the waiting or spam message section if you don't see the box \nA lot 💟`, threadID, messageID);
   } catch (error) {
     return api.sendMessage(`I'm wrong so I can't add you to that group:<.\n\n${error}`, threadID, messageID);
   }
