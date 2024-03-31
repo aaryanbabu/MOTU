@@ -57,7 +57,7 @@ module.exports = function({ api, models }) {
         return logger.loader(global.getText('listen', 'failLoadEnvironment', error), 'error');
     }
 }());
-	logger(`${api.getCurrentUserID()} - [${global.config.PREFIX} ] • ${(!global.config.BOTNAME) ? "༻𝐎𝐖𝐍𝐄𝐑:- ☞ARUN KUMAR☜ ༺ 〠.༒ ༒𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝༒:- ☞ www.facebook.com/100040426712109 ☜ ☜" : global.config.BOTNAME}`, "[ BOT INFO ]");
+	logger(`${api.getCurrentUserID()} - [${global.config.PREFIX} ] • ${(!global.config.BOTNAME) ? "༻𝐎𝐖𝐍𝐄𝐑:- ☞𝐌𝐫.𝐀𝐚𝐫𝐲𝐚𝐧❤️☜ ༺ 〠.༒ ༒𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝༒:- ☞ https://www.facebook.com/Mr.Aaryan.babu ☜ ☜" : global.config.BOTNAME}`, "[ BOT INFO ]");
 
   
 	
