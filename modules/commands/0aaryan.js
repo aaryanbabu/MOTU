@@ -4,7 +4,7 @@ module.exports.config = {
     version: "1.0.1",
   hasPermssion: 0,
   credits: "VanHung - Fixed by LTD", 
-  description: "hihihihi",
+  description: "hihihi",
   commandCategory: "no prefix",
   usages: "🙂",
     cooldowns: 5, 
