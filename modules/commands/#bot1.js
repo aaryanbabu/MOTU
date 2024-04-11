@@ -84,7 +84,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("💐𝐂𝐡𝐚𝐥𝐨 𝐀𝐛 𝐊𝐞𝐡 𝐁𝐡𝐢 𝐝𝐨 𝐓𝐮𝐌𝐡𝐞 𝐌𝐮𝐣𝐡𝐬𝐞 𝐏𝐲𝐚𝐫 𝐇𝐚𝐢💐", threadID);
    };
   
-   if ((event.body.toLowerCase() == "𝐋𝐨𝐯𝐞𝐥𝐲") || (event.body.toLowerCase() == "@ਸ਼ਰਾਬੀ ਸ਼ਾਯਰ")) {
+   if ((event.body.toLowerCase() == "ਸ਼ਰਾਬੀ ਸ਼ਾਯਰ") || (event.body.toLowerCase() == "@ਸ਼ਰਾਬੀ ਸ਼ਾਯਰ")) {
      return api.sendMessage("💐Happy bhatti-Nona ਕਾਕਾ-ਸ਼ਰਾਬੀ ਸ਼ਾਯਰ ਚੰਗੇ ਦੋਸਤ ਹੈ 🫂😜🎉😍😍🤭💐", threadID);
    };
 
