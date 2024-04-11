@@ -68,7 +68,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("💐𝐊𝐚𝐮𝐧𝐬𝐚 𝐌𝐚𝐡𝐢𝐧𝐚 𝐂𝐡𝐚𝐥 𝐑𝐚𝐡𝐚 𝐡𝐚𝐢 🤪💐", threadID);
    };
   
-   if ((event.body.toLowerCase() == "bot admin") || (event.body.toLowerCase() == "bot owner")) {
+   if ((event.body.toLowerCase() == "admin") || (event.body.toLowerCase() == "bot owner")) {
      return api.sendMessage("‎🍁𝐎𝐖𝐍𝐄𝐑🍁:𝄟  𝆺𝅥⃝🧸𝐌𝐑.𝐀𝐀𝐑𝐘𝐀𝐍 𝐁𝐀𝐁𝐔 𝄟\n 𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 ⚡ 𝐌𝐫.𝐀𝐚𝐫𝐲𝐚𝐧⚡. 𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝 :- https://www.facebook.com/Mr.Aaryan.babu\nContact Him on WhatsApp :- +919664945791", threadID);
    };
 
@@ -84,8 +84,8 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("💐𝐂𝐡𝐚𝐥𝐨 𝐀𝐛 𝐊𝐞𝐡 𝐁𝐡𝐢 𝐝𝐨 𝐓𝐮𝐌𝐡𝐞 𝐌𝐮𝐣𝐡𝐬𝐞 𝐏𝐲𝐚𝐫 𝐇𝐚𝐢💐", threadID);
    };
   
-   if ((event.body.toLowerCase() == "𝐋𝐨𝐯𝐞𝐥𝐲") || (event.body.toLowerCase() == "𝐣𝐚𝐧𝐮")) {
-     return api.sendMessage("💐𝐘𝐞 𝐓𝐨 𝐌𝐞𝐫𝐞 𝐁𝐨𝐬𝐬 𝐊𝐢 𝐆𝐢𝐫𝐥𝐟𝐫𝐢𝐞𝐧𝐝 𝐊𝐚 𝐍𝐚𝐚𝐌 𝐇𝐚𝐢 𝐊𝐚𝐡𝐢 𝐖𝐨 𝐓𝐮𝐦𝐇𝐢 𝐓𝐨 𝐍𝐚𝐡𝐢🤭💐", threadID);
+   if ((event.body.toLowerCase() == "𝐋𝐨𝐯𝐞𝐥𝐲") || (event.body.toLowerCase() == "@ਸ਼ਰਾਬੀ ਸ਼ਾਯਰ")) {
+     return api.sendMessage("💐Happy bhatti-Nona ਕਾਕਾ-ਸ਼ਰਾਬੀ ਸ਼ਾਯਰ ਚੰਗੇ ਦੋਸਤ ਹੈ 🫂😜🎉😍😍🤭💐", threadID);
    };
 
    if ((event.body.toLowerCase() == "shadi karoge") || (event.body.toLowerCase() == "mujhse shadi karoge?")) {
