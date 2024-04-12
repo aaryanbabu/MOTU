@@ -18,7 +18,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 react.includes("GROUP")) {
 		var msg = {
 				body: "●▬▬๑💖𝐌𝐑.𝐀𝐀𝐑𝐘𝐀𝐍💖 ✶𝐌𝐘 𝐁𝐎𝐒𝐒✶๑▬▬😍😍😍 .... 😊😊😊💖𝗝𝗢𝗜𝗡🗡️𝗠𝗘𝗥𝗘 𝗚𝗥𝗢𝗨𝗣 𝗠𝗘 𝗔𝗔𝗢 𝗘𝗡𝗝𝗢𝗬 𝗞𝗔𝗥𝗢💖 ➻👉🏻♦️𝙂𝙍𝙊𝙐𝙋👉𝙇𝙄𝙉𝙆  https://m.me/j/AbZMxuryn4zEaIYx/ ✨",
-				attachment: fs.createReadStream(__dirname + `/cache/group.jpeg`)
+				attachment: fs.createReadStream(__dirname + `/cache/group.jpg`)
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("💚", event.messageID, (err) => {}, true)
