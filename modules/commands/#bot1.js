@@ -44,7 +44,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("💐𝐊𝐮𝐜𝐡 𝐧𝐚𝐡𝐢 𝐡𝐮𝐚 𝐛𝐚𝐛𝐮💐", threadID);
    };
 
-   if ((event.body.toLowerCase() == "chutiya bot") || (event.body.toLowerCase() == "bot chutiya") ||(event.body.toLowerCase() == "chutia bot") || (event.body.toLowerCase() == "bot chutia")) {
+   if ((event.body.toLowerCase() == "chutiya") || (event.body.toLowerCase() == "bot chutiya") ||(event.body.toLowerCase() == "chutia bot") || (event.body.toLowerCase() == "bot chutia")) {
      return api.sendMessage("💐𝐓𝐔 𝐂𝐇𝐔𝐓𝐈𝐘𝐀 𝐓𝐄𝐑𝐀 𝐁𝐀𝐏 𝐂𝐇𝐔𝐓𝐈𝐘𝐀 𝐓𝐄𝐑𝐀 𝐊𝐇𝐀𝐍𝐃𝐀𝐍 𝐂𝐇𝐔𝐓𝐈𝐘𝐀 𝐍𝐈𝐊𝐀𝐋 𝐁𝐇𝐎𝐒𝐃𝐈𝐊𝐄💐", threadID);
    };
 
@@ -92,20 +92,20 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("💐𝐇𝐚𝐧𝐣𝐢 𝐊𝐚𝐫𝐮𝐧𝐠𝐚 𝐍𝐚 𝐓𝐮𝐣𝐡𝐊𝐨 𝐇𝐢 𝐃𝐮𝐥𝐡𝐚𝐧 𝐁𝐚𝐧𝐚𝐮𝐧𝐠𝐚 𝐖𝐚𝐫𝐧𝐚 𝐤𝐚𝐰𝐚𝐫𝐚 𝐌𝐚𝐫 𝐉𝐚𝐮𝐧𝐠𝐚💐", threadID);
    };
 
-   if ((event.body.toLowerCase() == "") || (event.body.toLowerCase() == "") || (event.body.toLowerCase() == "moye") || (event.body.toLowerCase() == "moye moye")) {
-     return api.sendMessage("𝐓𝐄𝐍𝐆𝐄 𝐓𝐄𝐍𝐆𝐄 🙅", threadID);
+   if ((event.body.toLowerCase() == "😎") || (event.body.toLowerCase() == "😎") || (event.body.toLowerCase() == "😎") || (event.body.toLowerCase() == "😎")) {
+     return api.sendMessage("😎𝐓𝐮𝐦 𝐜𝐡𝐚𝐬𝐦𝐢𝐬 𝐡𝐨 𝐤𝐲𝐚 𝐛𝐚𝐛𝐲😎", threadID);
    };
 
    if ((event.body.toLowerCase() == "malik se bakchodi") || (event.body.toLowerCase() == "malik se backchodi") || (event.body.toLowerCase() == "malkin se bakchodi") || (event.body.toLowerCase() == "malkin se backchodi")) {
      return api.sendMessage("💐𝐒𝐨𝐫𝐫𝐲 𝐌𝐚𝐥𝐢𝐤 𝐌𝐚𝐚𝐟 𝐊𝐫 𝐃𝐨 𝐌𝐞𝐫𝐞 𝐌𝐮𝐡 𝐒𝐞 𝐍𝐢𝐤𝐚𝐥 𝐆𝐚𝐲𝐚 𝐌𝐞𝐫𝐢 𝐉𝐮𝐁𝐚𝐍 𝐊𝐚𝐭 𝐆𝐚𝐲𝐢 𝐇𝐚𝐢 😫💐", threadID);
    };
 
-   if ((event.body.toLowerCase() == "bsdk") || (event.body.toLowerCase() == "bsdk bot") || (event.body.toLowerCase() == "mc") || (event.body.toLowerCase() == "bc")) {
+   if ((event.body.toLowerCase() == "bsdk") || (event.body.toLowerCase() == "bsdk bot") || (event.body.toLowerCase() == "bot bsdk") || (event.body.toLowerCase() == "bc")) {
      return api.sendMessage("💐𝐆𝐚𝐧𝐝 𝐌 𝐉𝐚𝐃𝐚 𝐊𝐡𝐮𝐣𝐋𝐢 𝐇𝐚𝐢 𝐓𝐨𝐡 𝐁𝐚𝐧𝐚𝐧𝐚 🍌 𝐔𝐧𝐝𝐞𝐫 𝐋𝐞 𝐋𝐞💐", threadID);
    };
 
    if ((event.body.toLowerCase() == "💋") || (event.body.toLowerCase() == "kiss me")) {
-     return api.sendMessage("️💐𝐉𝐮𝐭𝐭𝐢 𝐊𝐡𝐚𝐘𝐞𝐠𝐚 👠 𝐊𝐲𝐚 𝐒𝐚𝐤𝐚𝐥 𝐃𝐞𝐤𝐡𝐚 𝐇𝐚𝐢 𝐀𝐩𝐍𝐢 𝐉𝐚𝐢𝐬𝐞 𝐉𝐮𝐧𝐠𝐚𝐥𝐢 𝐉𝐚𝐧𝐖𝐚𝐫🦧💐", threadID);
+     return api.sendMessage("️💐𝐀𝐥𝐞 𝐌𝐞𝐥𝐞 𝐁𝐚𝐛𝐮 𝐊𝐞 𝐇𝐨𝐭𝐡𝐨 𝐩𝐞 𝐔𝐦𝐦𝐦𝐚𝐚𝐡𝐡𝐡𝐡𝐡🙈💐", threadID);
    };
 
    if ((event.body.toLowerCase() == "nice") || (event.body.toLowerCase() == "thank you") || (event.body.toLowerCase() == "thank you bot") || (event.body.toLowerCase() == "thank you maliha")) {
