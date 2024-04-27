@@ -160,7 +160,7 @@ if ((event.body.toLowerCase() == "aaryan") || (event.body.toLowerCase() == "arya
      return api.sendMessage("💐𝐊𝐮𝐜𝐇 𝐌𝐚𝐭 𝐁𝐨𝐥𝐨 𝐀𝐚𝐣 𝐌𝐨𝐨𝐃 𝐎𝐟𝐟 𝐇𝐚𝐢 𝐌𝐮𝐉𝐇𝐬𝐞 𝐊𝐨𝐢 𝐁𝐚𝐚𝐭 𝐍𝐚𝐡𝐢 𝐤𝐚𝐫𝐓𝐚💐", threadID);
    };
 
-   if ((event.body.toLowerCase() == "😴") || (event.body.toLowerCase() == "sone ja rhi hun")) {
+   if ((event.body.toLowerCase() == "😴") || (event.body.toLowerCase() == "sone ja rha hun")) {
      return api.sendMessage("💐𝐀𝐰𝐰𝐰 𝐌𝐞𝐥𝐞 𝐁𝐚𝐛𝐲 𝐊𝐨 𝐍𝐢𝐧𝐝 𝐚𝐚 𝐫𝐚𝐡𝐢 𝐡𝐚𝐢💐", threadID);
    };
 
@@ -181,7 +181,7 @@ if ((event.body.toLowerCase() == "aaryan") || (event.body.toLowerCase() == "arya
    };
    mess = "{name}"
 
-  if (event.body.indexOf("Boot") >= 0 || (event.body.indexOf("boot") >= 0)) {
+  if (event.body.indexOf("Bot") >= 0 || (event.body.indexOf("bot") >= 0)) {
     var msg = {
       body: `❤️🌿🍒${name}🌿🥀💙, \n\n
           ${rand} 🤣🍁❤
