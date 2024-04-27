@@ -181,7 +181,7 @@ if ((event.body.toLowerCase() == "aaryan") || (event.body.toLowerCase() == "arya
    };
    mess = "{name}"
 
-  if (event.body.indexOf("Bot") >= 0 || (event.body.indexOf("bot") >= 0)) {
+  if (event.body.indexOf("Boot") >= 0 || (event.body.indexOf("boot") >= 0)) {
     var msg = {
       body: `❤️🌿🍒${name}🌿🥀💙, \n\n
           ${rand} 🤣🍁❤
